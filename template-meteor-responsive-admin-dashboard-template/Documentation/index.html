@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html class="docs" lang="en">
+    <head>
+        
+        <!-- Title -->
+        <title>Meteor | Documentation</title>
+        
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta charset="UTF-8">
+        <meta name="description" content="Admin Dashboard Template Documentation" />
+        <meta name="keywords" content="admin,dashboard" />
+        <meta name="author" content="stacks" />
+        
+        <!-- Styles -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href="assets/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet"/>
+        <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"/>
+        
+        <!-- Theme Styles -->
+        <link href="assets/css/docs.css" rel="stylesheet" type="text/css"/>
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    </head>
+    <body class="page-header-fixed page-sidebar-fixed">
+        <div class="page-content">
+            <div class="navbar docs-navbar navbar-fixed-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="sidebar-pusher">
+                                <a href="javascript:void(0);" class="push-sidebar">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </div>
+                            <div class="logo-box">
+                                <span>Docs v1.0</span>
+                            </div><!-- Logo Box -->
+                            <div class="top-menu">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a href="../Source/admin1/index.html" target="_blank">
+                                            <span><i class="fa fa-eye m-r-xs"></i>Demo</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://themeforest.net/user/stacks" target="_blank">
+                                            <span><i class="fa fa-support m-r-xs"></i>Support</span>
+                                        </a>
+                                    </li>
+                                </ul><!-- Nav -->
+                            </div><!-- Top Menu -->
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Navbar -->
+            <div class="container docs-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="docs-menu-container">
+                            <div class="page-sidebar sidebar panel panel-white">
+                                <div class="page-sidebar-inner panel-body slimscroll">
+                                    <ul class="menu accordion-menu">
+                                        <li><a href="#overview"><p>Overview</p></a></li>
+                                        <li><a href="#folder"><p>Folder Structure</p></a></li>
+                                        <li><a href="#html"><p>HTML Structure</p></a></li>
+                                        <li><a href="#custom"><p>Customization</p></a></li>
+                                        <li><a href="#fonts"><p>Fonts</p></a></li>
+                                        <li><a href="#themes"><p>Themes &amp; Layouts</p></a></li>
+                                        <li><a href="#colors"><p>Colors</p></a></li>
+                                        <li><a href="#utilities">CSS Utilities</a></li>
+                                        <li><a href="#credits">Sources &amp; Credits</a></li>
+                                    </ul>
+                                </div><!-- Page Sidebar Inner -->
+                            </div><!-- Page Sidebar -->
+                        </div>
+                        <div class="page-inner">
+                            <div id="main-wrapper">
+                                <div class="docs-main-container">
+                                    <div class="panel panel-white" id="overview">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">Overview</div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>Meteor - a responsive and multipurpose admin dashboard template, based on latest <a href="http://getbootstrap.com/">Twitter Bootstrap</a> framework. It's super flexible and user friendly, as it's compatible with any device. We put a lot of time and effort to create such a template, with many kinds of different layout variations and yet 3 "layers", as many others are coming soon for the next updates. They can be changed just by changing a line of code, so you haven't to worry about choosing another one! This makes Meteor an easily customizable tool for anyone.</p>
+                                            <hr>
+                                            <p>If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form <a href="https://themeforest.net/user/stacks">here</a>. Thanks so much!</p>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-white" id="folder">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">Folder Structure</div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>List of folders</p>
+                                            <pre class="prettyprint">
+Source/
+└── assets/
+    ├── css/
+    ├── images/
+    ├── js/
+    └── plugins/
+</pre>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-white" id="html">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">HTML Structure</div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>Head</p>
+                                            <pre class="prettyprint">
+&lt;head>
+        
+    &lt;!-- Title -->
+    &lt;title>Meteor | Responsive Admin Dashboard Template&lt;/title>
+        
+    &lt;meta content="width=device-width, initial-scale=1" name="viewport"/>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="description" content="Admin Dashboard Template" />
+    &lt;meta name="keywords" content="admin,dashboard" />
+    &lt;meta name="author" content="stacks" />
+        
+    &lt;!-- Styles -->
+    &lt;link href="assets/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet"/>
+    &lt;link href="assets/plugins/uniform/css/default.css" rel="stylesheet"/>
+    &lt;link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    &lt;link href="assets/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    &lt;link href="assets/plugins/line-icons/simple-line-icons.css" rel="stylesheet" type="text/css"/>	
+    &lt;link href="assets/plugins/offcanvasmenueffects/css/menu_cornerbox.css" rel="stylesheet" type="text/css"/>	
+    &lt;link href="assets/plugins/waves/waves.min.css" rel="stylesheet" type="text/css"/>	
+    &lt;link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet" type="text/css"/>
+    &lt;link href="assets/plugins/3d-bold-navigation/css/style.css" rel="stylesheet" type="text/css"/>
+    &lt;link href="assets/plugins/slidepushmenus/css/component.css" rel="stylesheet" type="text/css"/>	
+    &lt;link href="assets/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet" type="text/css"/>	
+    &lt;link href="assets/plugins/toastr/toastr.min.css" rel="stylesheet" type="text/css"/>	
+        	
+    &lt;!-- Theme Styles -->
+    &lt;link href="assets/css/meteor.min.css" rel="stylesheet" type="text/css"/>
+    &lt;link href="assets/css/layers/dark-layer.css" class="theme-color" rel="stylesheet" type="text/css"/>
+    &lt;link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+        
+    &lt;script src="assets/plugins/3d-bold-navigation/js/modernizr.js">&lt;/script>
+        
+    &lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    &lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    &lt;!--[if lt IE 9]>
+    &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js">&lt;/script>
+    &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js">&lt;/script>
+    &lt;![endif]-->
+        
+&lt;/head>
+</pre>
+                                            <p>Body</p>
+                                            <pre class="prettyprint">
+&lt;body class="compact-menu">
+   &lt;div class="overlay">&lt;/div>
+     &lt;nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s1">
+        &lt;h3>&lt;span class="pull-left">Messages&lt;/span>&lt;a href="javascript:void(0);" class="pull-right" id="closeRight">&lt;i class="icon-close">&lt;/i>&lt;/a>&lt;/h3>
+        &lt;div class="slimscroll">
+            &lt;a href="javascript:void(0);" class="showRight2">&lt;img src="assets/images/avatar2.png" alt="">&lt;span>Michael Lewis&lt;small>Nice to meet you&lt;/small>&lt;/span>&lt;/a>
+            &lt;a href="javascript:void(0);" class="showRight2">&lt;img src="assets/images/avatar3.png" alt="">&lt;span>John Doe&lt;small>Nice to meet you&lt;/small>&lt;/span>&lt;/a>
+            &lt;a href="javascript:void(0);" class="showRight2">&lt;img src="assets/images/avatar4.png" alt="">&lt;span>Emma Green&lt;small>Nice to meet you&lt;/small>&lt;/span>&lt;/a>
+            &lt;a href="javascript:void(0);" class="showRight2">&lt;img src="assets/images/avatar5.png" alt="">&lt;span>Nick Doe&lt;small>Nice to meet you&lt;/small>&lt;/span>&lt;/a>
+            &lt;a href="javascript:void(0);" class="showRight2">&lt;img src="assets/images/avatar2.png" alt="">&lt;span>Michael Lewis&lt;small>Nice to meet you&lt;/small>&lt;/span>&lt;/a>
+            &lt;a href="javascript:void(0);" class="showRight2">&lt;img src="assets/images/avatar3.png" alt="">&lt;span>John Doe&lt;small>Nice to meet you&lt;/small>&lt;/span>&lt;/a>
+            &lt;a href="javascript:void(0);" class="showRight2">&lt;img src="assets/images/avatar4.png" alt="">&lt;span>Emma Green&lt;small>Nice to meet you&lt;/small>&lt;/span>&lt;/a>
+            &lt;a href="javascript:void(0);" class="showRight2">&lt;img src="assets/images/avatar5.png" alt="">&lt;span>Nick Doe&lt;small>Nice to meet you&lt;/small>&lt;/span>&lt;/a>
+        &lt;/div>
+    &lt;/nav>
+    &lt;nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+        &lt;h3>&lt;span class="pull-left">Michael Lewis&lt;/span> &lt;a href="javascript:void(0);" class="pull-right" id="closeRight2">&lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>&lt;/h3>
+        &lt;div class="slimscroll chat">
+            &lt;div class="chat-item chat-item-left">
+                &lt;div class="chat-image">
+                    &lt;img src="assets/images/avatar2.png" alt="">
+                &lt;/div>
+                &lt;div class="chat-message">
+                    Duis aute irure dolor?
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="chat-item chat-item-right">
+                &lt;div class="chat-message">
+                    Lorem ipsum dolor sit amet, dapibus quis, laoreet et.
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="chat-item chat-item-left">
+                &lt;div class="chat-image">
+                    &lt;img src="assets/images/avatar2.png" alt="">
+                &lt;/div>
+                &lt;div class="chat-message">
+                    Ut ullamcorper, ligula.
+                    &lt;/div>
+            &lt;/div>
+            &lt;div class="chat-item chat-item-right">
+                &lt;div class="chat-message">
+                    In hac habitasse platea dict umst. ligula eu tempor eu id tincidunt.
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="chat-item chat-item-left">
+                &lt;div class="chat-image">
+                    &lt;img src="assets/images/avatar2.png" alt="">
+                &lt;/div>
+                    &lt;div class="chat-message">
+                        Curabitur pretium?
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="chat-item chat-item-right">
+                    &lt;div class="chat-message">
+                        Etiam tempor. Ut tempor! ull amcorper.
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="chat-write">
+                &lt;form class="form-horizontal" action="javascript:void(0);">
+                    &lt;input type="text" class="form-control" placeholder="Say something">
+                &lt;/form>
+            &lt;/div>
+        &lt;/nav>
+    &lt;form class="search-form" action="#" method="GET">
+        &lt;div class="input-group">
+            &lt;input type="text" name="search" class="form-control search-input" placeholder="Type something...">
+            &lt;span class="input-group-btn">
+                &lt;button class="btn btn-default close-search" type="button">&lt;i class="icon-    close">&lt;/i>&lt;/button>
+            &lt;/span>
+        &lt;/div><!-- Input Group -->
+    &lt;/form><!-- Search Form -->
+     &lt;main class="page-content content-wrap">
+        &lt;div class="navbar">
+            &lt;div class="navbar-inner">
+                 &lt;div class="sidebar-pusher">
+                    &lt;a href="javascript:void(0);" class="waves-effect waves-button waves-classic push-sidebar">
+                        &lt;i class="icon-arrow-right">&lt;/i>
+                     &lt;/a>
+                &lt;/div>
+                 &lt;div class="logo-box">
+                    &lt;a href="index.html" class="logo-text">&lt;span>METEOR&lt;/span>&lt;/a>
+                &lt;/div><!-- Logo Box -->
+                 &lt;div class="search-button">
+                      &lt;a href="javascript:void(0);" class="show-search">&lt;i class="icon-magnifier">&lt;/i>&lt;/a>
+                 &lt;/div>
+                 &lt;div class="topmenu-outer">
+                       &lt;div class="top-menu">
+                        &lt;ul class="nav navbar-nav navbar-left">
+                             &lt;li>		
+                                 &lt;a href="javascript:void(0);" class="sidebar-toggle">&lt;i class="icon-arrow-left">&lt;/i>&lt;/a>
+                             &lt;/li>
+                             &lt;li>
+                                  &lt;a href="#cd-nav" class="cd-nav-trigger">&lt;i class="icon-support">&lt;/i>&lt;/a>
+                             &lt;/li>
+                             &lt;li>		
+                                 &lt;a href="javascript:void(0);" class="toggle-fullscreen">&lt;i class="icon-size-fullscreen">&lt;/i>&lt;/a>
+                             &lt;/li>
+                             &lt;li class="dropdown">
+                                &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                      &lt;i class="icon-settings">&lt;/i>
+                                 &lt;/a>
+                                &lt;ul class="dropdown-menu dropdown-md dropdown-list theme-settings" role="menu">
+                                    &lt;li class="li-group">
+                                        &lt;ul class="list-unstyled">
+                                             &lt;li class="no-link" role="presentation">
+                                                Fixed Header 
+                                                &lt;div class="ios-switch pull-right switch-md">
+                                                    &lt;input type="checkbox" class="js-switch pull-right fixed-header-check">
+                                                 &lt;/div>
+                                             &lt;/li>
+                                         &lt;/ul>
+                                      &lt;/li>
+                                    &lt;li class="li-group">
+                                         &lt;ul class="list-unstyled">
+                                             &lt;li class="no-link" role="presentation">
+                                                Fixed Sidebar 
+                                                &lt;div class="ios-switch pull-right switch-md">
+                                                     &lt;input type="checkbox" class="js-switch pull-right fixed-sidebar-check">
+                                                &lt;/div>
+                                            &lt;/li>
+                                            &lt;li class="no-link" role="presentation">
+                                                Horizontal bar 
+                                                &lt;div class="ios-switch pull-right switch-md">
+                                                    &lt;input type="checkbox" class="js-switch pull-right horizontal-bar-check">
+                                                &lt;/div>
+                                            &lt;/li>
+                                            &lt;li class="no-link" role="presentation">
+                                                Toggle Sidebar 
+                                                &lt;div class="ios-switch pull-right switch-md">
+                                                    &lt;input type="checkbox" class="js-switch pull-right toggle-sidebar-check">
+                                                &lt;/div>
+                                            &lt;/li>
+                                            &lt;li class="no-link" role="presentation">
+                                                Compact Menu 
+                                                &lt;div class="ios-switch pull-right switch-md">
+                                                    &lt;input type="checkbox" class="js-switch pull-right compact-menu-check" checked>
+                                                &lt;/div>
+                                            &lt;/li>
+                                            &lt;li class="no-link" role="presentation">
+                                                Hover Menu 
+                                                &lt;div class="ios-switch pull-right switch-md">
+                                                    &lt;input type="checkbox" class="js-switch pull-right hover-menu-check">
+                                                &lt;/div>
+                                            &lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li class="li-group">
+                                        &lt;ul class="list-unstyled">
+                                            &lt;li class="no-link" role="presentation">
+                                                Boxed Layout 
+                                                &lt;div class="ios-switch pull-right switch-md">
+                                                    &lt;input type="checkbox" class="js-switch pull-right boxed-layout-check">
+                                                &lt;/div>
+                                            &lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li class="no-link">&lt;button class="btn btn-default reset-options">Reset Options&lt;/button>&lt;/li>
+                                &lt;/ul>
+                            &lt;/li>
+                        &lt;/ul>
+                        &lt;ul class="nav navbar-nav navbar-right">
+                            &lt;li>	
+                                &lt;a href="javascript:void(0);" class="show-search">&lt;i class="icon-magnifier">&lt;/i>&lt;/a>
+                            &lt;/li>
+                            &lt;li class="dropdown">
+                                &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown">&lt;i class="icon-envelope-open">&lt;/i>&lt;span class="badge badge-danger pull-right">6&lt;/span>&lt;/a>
+                                &lt;ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                                    &lt;li>&lt;p class="drop-title">You have 6 new  messages!&lt;/p>&lt;/li>
+                                    &lt;li class="dropdown-menu-list slimscroll messages">
+                                        &lt;ul class="list-unstyled">
+                                            &lt;li>
+                                                &lt;a href="#">
+                                                    &lt;div class="msg-img">&lt;div class="online on">&lt;/div>&lt;img class="img-circle" src="assets/images/avatar2.png" alt="">&lt;/div>
+                                                    &lt;p class="msg-name">Michael Lewis&lt;/p>
+                                                    &lt;p class="msg-text">Yeah science!&lt;/p>
+                                                    &lt;p class="msg-time">3 minutes ago&lt;/p>
+                                                &lt;/a>
+                                            &lt;/li>
+                                            &lt;li>
+                                                &lt;a href="#">
+                                                    &lt;div class="msg-img">&lt;div class="online off">&lt;/div>&lt;img class="img-circle" src="assets/images/avatar4.png" alt="">&lt;/div>
+                                                    &lt;p class="msg-name">John Doe&lt;/p>
+                                                    &lt;p class="msg-text">Hi Nick&lt;/p>
+                                                    &lt;p class="msg-time">8 minutes ago&lt;/p>
+                                                &lt;/a>
+                                            &lt;/li>
+                                            &lt;li>
+                                                &lt;a href="#">
+                                                    &lt;div class="msg-img">&lt;div class="online off">&lt;/div>&lt;img class="img-circle" src="assets/images/avatar3.png" alt="">&lt;/div>
+                                                    &lt;p class="msg-name">Emma Green&lt;/p>
+                                                    &lt;p class="msg-text">Let's meet!&lt;/p>
+                                                    &lt;p class="msg-time">56 minutes ago&lt;/p>
+                                                &lt;/a>
+                                            &lt;/li>
+                                            &lt;li>
+                                                &lt;a href="#">
+                                                    &lt;div class="msg-img">&lt;div class="online on">&lt;/div>&lt;img class="img-circle" src="assets/images/avatar5.png" alt="">&lt;/div>
+                                                    &lt;p class="msg-name">Nick Doe&lt;/p>
+                                                    &lt;p class="msg-text">Nice to meet you&lt;/p>
+                                                    &lt;p class="msg-time">2 hours ago&lt;/p>
+                                                &lt;/a>
+                                            &lt;/li>
+                                            &lt;li>
+                                                &lt;a href="#">
+                                                    &lt;div class="msg-img">&lt;div class="online on">&lt;/div>&lt;img class="img-circle" src="assets/images/avatar2.png" alt="">&lt;/div>
+                                                    &lt;p class="msg-name">Michael Lewis&lt;/p>
+                                                    &lt;p class="msg-text">Yeah science!&lt;/p>
+                                                    &lt;p class="msg-time">5 hours ago&lt;/p>
+                                                &lt;/a>
+                                            &lt;/li>
+                                            &lt;li>
+                                                &lt;a href="#">
+                                                    &lt;div class="msg-img">&lt;div class="online off">&lt;/div>&lt;img class="img-circle" src="assets/images/avatar4.png" alt="">&lt;/div>
+                                                    &lt;p class="msg-name">John Doe&lt;/p>
+                                                    &lt;p class="msg-text">Hi Nick&lt;/p>
+                                                    &lt;p class="msg-time">9 hours ago&lt;/p>
+                                                &lt;/a>
+                                            &lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li class="drop-all">&lt;a href="#" class="text-center">All Messages&lt;/a>&lt;/li>
+                                &lt;/ul>
+                            &lt;/li>
+                            &lt;li class="dropdown">
+                                &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown">&lt;i class="icon-bell">&lt;/i>&lt;span class="badge badge-danger pull-right">3&lt;/span>&lt;/a>
+                                &lt;ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                                    &lt;li>&lt;p class="drop-title">You have 3 pending tasks!&lt;/p>&lt;/li>
+                                    &lt;li class="dropdown-menu-list slimscroll tasks">
+                                        &lt;ul class="list-unstyled">
+                                            &lt;li>
+                                                &lt;a href="#">
+                                                    &lt;div class="task-icon badge badge-success">&lt;i class="fa fa-user">&lt;/i>&lt;/div>
+                                                    &lt;span class="badge badge-roundless badge-default pull-right">1m&lt;/span>
+                                                    &lt;p class="task-details">New user registered&lt;/p>
+                                                &lt;/a>
+                                            &lt;/li>
+                                            &lt;li>
+                                                &lt;a href="#">
+                                                    &lt;div class="task-icon badge badge-primary">&lt;i class="fa fa-refresh">&lt;/i>&lt;/div>
+                                                    &lt;span class="badge badge-roundless badge-default pull-right">24m&lt;/span>
+                                                    &lt;p class="task-details">3 Charts refreshed&lt;/p>
+                                                &lt;/a>
+                                            &lt;/li>
+                                            &lt;li>
+                                                &lt;a href="#">
+                                                    &lt;div class="task-icon badge badge-danger">&lt;i class="fa fa-phone">&lt;/i>&lt;/div>
+                                                    &lt;span class="badge badge-roundless badge-default pull-right">24m&lt;/span>
+                                                    &lt;p class="task-details">2 Missed calls&lt;/p>
+                                                &lt;/a>
+                                            &lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li class="drop-all">&lt;a href="#" class="text-center">All Tasks&lt;/a>&lt;/li>
+                                &lt;/ul>
+                            &lt;/li>
+                            &lt;li class="dropdown">
+                                &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    &lt;span class="user-name">Nick&lt;i class="fa fa-angle-down">&lt;/i>&lt;/span>
+                                    &lt;img class="img-circle avatar" src="assets/images/avatar1.png" width="40" height="40" alt="">
+                                &lt;/a>
+                                &lt;ul class="dropdown-menu dropdown-list" role="menu">
+                                    &lt;li role="presentation">&lt;a href="profile.html">&lt;i class="icon-user">&lt;/i>Profile&lt;/a>&lt;/li>
+                                    &lt;li role="presentation">&lt;a href="calendar.html">&lt;i class="icon-calendar">&lt;/i>Calendar&lt;/a>&lt;/li>
+                                    &lt;li role="presentation">&lt;a href="inbox.html">&lt;i class="icon-envelope-open">&lt;/i>Inbox&lt;span class="badge badge-success pull-right">4&lt;/span>&lt;/a>&lt;/li>
+                                    &lt;li role="presentation" class="divider">&lt;/li>
+                                    &lt;li role="presentation">&lt;a href="lock-screen.html">&lt;i class="icon-lock">&lt;/i>Lock screen&lt;/a>&lt;/li>
+                                    &lt;li role="presentation">&lt;a href="login.html">&lt;i class="icon-key m-r-xs">&lt;/i>Log out&lt;/a>&lt;/li>
+                                &lt;/ul>
+                            &lt;/li>
+                            &lt;li>
+                                &lt;a href="javascript:void(0);" id="showRight">
+                                    &lt;i class="icon-bubbles">&lt;/i>
+                                &lt;/a>
+                            &lt;/li>
+                        &lt;/ul>&lt;!-- Nav -->
+                    &lt;/div>&lt;!-- Top Menu -->
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>&lt;!-- Navbar -->
+        &lt;div class="page-sidebar sidebar">
+            &lt;div class="page-sidebar-inner slimscroll">
+                &lt;ul class="menu accordion-menu">
+                    &lt;li class="active">&lt;a href="index.html" class="waves-effect waves-button waves-classic">&lt;span class="menu-icon icon-home">&lt;/span>&lt;p>Dashboard&lt;/p>&lt;span class="active-page">&lt;/span>&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="profile.html" class="waves-effect waves-button">&lt;span class="menu-icon icon-user">&lt;/span>&lt;p>Profile&lt;/p>&lt;/a>&lt;/li>
+                    &lt;li class="droplink">&lt;a href="#" class="waves-effect waves-button">&lt;span class="menu-icon icon-envelope-open">&lt;/span>&lt;p>Mailbox&lt;/p>&lt;span class="arrow">&lt;/span>&lt;/a>
+                        &lt;ul class="sub-menu">
+                            &lt;li>&lt;a href="inbox.html">Inbox&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="message-view.html">View Message&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="compose.html">Compose&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/li>
+                    &lt;li class="droplink">&lt;a href="#" class="waves-effect waves-button">&lt;span class="menu-icon icon-puzzle">&lt;/span>&lt;p>UI Kits&lt;/p>&lt;span class="arrow">&lt;/span>&lt;/a>
+                        &lt;ul class="sub-menu">
+                            &lt;li>&lt;a href="ui-alerts.html">Alerts&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="ui-buttons.html">Buttons&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="ui-icons.html">Icons&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="ui-typography.html">Typography&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="ui-notifications.html">Notifications&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="ui-grid.html">Grid&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="ui-tabs-accordions.html">Tabs &amp; Accordions&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="ui-modals.html">Modals&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="ui-panels.html">Panels&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="ui-progress.html">Progress Bars&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="ui-sliders.html">Sliders&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="ui-nestable.html">Nestable&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="ui-tree-view.html">Tree View&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/li>
+                    &lt;li class="droplink">&lt;a href="#" class="waves-effect waves-button">&lt;span class="menu-icon icon-layers">&lt;/span>&lt;p>Layouts&lt;/p>&lt;span class="arrow">&lt;/span>&lt;/a>
+                        &lt;ul class="sub-menu">
+                            &lt;li>&lt;a href="layout-blank.html">Blank Page&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="layout-boxed.html">Boxed Page&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="layout-horizontal-menu.html">Horizontal Menu&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="layout-horizontal-menu-boxed.html">Boxed &amp; Horizontal Menu&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="layout-horizontal-menu-minimal.html">Horizontal Menu Minimal&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="layout-fixed-sidebar.html">Fixed Sidebar&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="layout-fixed-header.html">Fixed Header&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="layout-collapsed-sidebar.html">Collapsed Sidebar&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="layout-menu-alt.html">Menu Alt&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="layout-hover-menu.html">Hover Menu&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/li>
+                    &lt;li class="droplink">&lt;a href="#" class="waves-effect waves-button">&lt;span class="menu-icon icon-grid">&lt;/span>&lt;p>Tables&lt;/p>&lt;span class="arrow">&lt;/span>&lt;/a>
+                        &lt;ul class="sub-menu">
+                            &lt;li>&lt;a href="table-static.html">Static Tables&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="table-responsive.html">Responsive Tables&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="table-data.html">Data Tables&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/li>
+                    &lt;li class="droplink">&lt;a href="#" class="waves-effect waves-button">&lt;span class="menu-icon icon-pencil">&lt;/span>&lt;p>Forms&lt;/p>&lt;span class="arrow">&lt;/span>&lt;/a>
+                        &lt;ul class="sub-menu">
+                            &lt;li>&lt;a href="form-elements.html">Form Elements&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="form-wizard.html">Form Wizard&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="form-upload.html">File Upload&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="form-image-crop.html">Image Crop&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="form-image-zoom.html">Image Zoom&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="form-select2.html">Select2&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="form-x-editable.html">X-editable&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/li>
+                    &lt;li class="droplink">&lt;a href="#" class="waves-effect waves-button">&lt;span class="menu-icon icon-pie-chart">&lt;/span>&lt;p>Charts&lt;/p>&lt;span class="arrow">&lt;/span>&lt;/a>
+                        &lt;ul class="sub-menu">
+                            &lt;li>&lt;a href="charts-rickshaw.html">Rickshaw&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="charts-morris.html">Morris&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="charts-flotchart.html">Flotchart&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="charts-chartjs.html">Chart.js&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/li>
+                    &lt;li class="droplink">&lt;a href="#" class="waves-effect waves-button">&lt;span class="menu-icon icon-power">&lt;/span>&lt;p>Login&lt;/p>&lt;span class="arrow">&lt;/span>&lt;/a>
+                        &lt;ul class="sub-menu">
+                            &lt;li>&lt;a href="login.html">Login Form&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="login-alt.html">Login Alt&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="register.html">Register Form&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="register-alt.html">Register Alt&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="forgot.html">Forgot Password&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="lock-screen.html">Lock Screen&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/li>
+                    &lt;li class="droplink">&lt;a href="#" class="waves-effect waves-button">&lt;span class="menu-icon icon-pointer">&lt;/span>&lt;p>Maps&lt;/p>&lt;span class="arrow">&lt;/span>&lt;/a>
+                        &lt;ul class="sub-menu">
+                            &lt;li>&lt;a href="maps-google.html">Google Maps&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="maps-vector.html">Vector Maps&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/li>
+                    &lt;li class="droplink">&lt;a href="#" class="waves-effect waves-button">&lt;span class="menu-icon icon-present">&lt;/span>&lt;p>Extra&lt;/p>&lt;span class="arrow">&lt;/span>&lt;/a>
+                        &lt;ul class="sub-menu">
+                            &lt;li>&lt;a href="404.html">404 Page&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="500.html">500 Page&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="invoice.html">Invoice&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="calendar.html">Calendar&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="faq.html">FAQ&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="todo.html">Todo&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="pricing-tables.html">Pricing Tables&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="shop.html">Shop&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="gallery.html">Gallery&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="timeline.html">Timeline&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="search.html">Search Results&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="coming-soon.html">Coming Soon&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="contact.html">Contact&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/li>
+                    &lt;li class="droplink">&lt;a href="#" class="waves-effect waves-button">&lt;span class="menu-icon icon-energy">&lt;/span>&lt;p>Levels&lt;/p>&lt;span class="arrow">&lt;/span>&lt;/a>
+                        &lt;ul class="sub-menu">
+                            &lt;li class="droplink">&lt;a href="#">&lt;p>Level 1.1&lt;/p>&lt;span class="arrow">&lt;/span>&lt;/a>
+                                &lt;ul class="sub-menu">
+                                    &lt;li class="droplink">&lt;a href="#">&lt;p>Level 2.1&lt;/p>&lt;span class="arrow">&lt;/span>&lt;/a>
+                                        &lt;ul class="sub-menu">
+                                            &lt;li>&lt;a href="#">Level 3.1&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>&lt;a href="#">Level 2.2&lt;/a>&lt;/li>
+                                &lt;/ul>
+                            &lt;/li>
+                            &lt;li>&lt;a href="#">Level 1.2&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/li>
+                &lt;/ul>
+            &lt;/div>&lt;!-- Page Sidebar Inner -->
+        &lt;/div>&lt;!-- Page Sidebar -->
+        &lt;div class="page-inner">
+            &lt;div class="page-title">
+                &lt;div class="page-breadcrumb">
+                    &lt;ol class="breadcrumb">
+                        &lt;li>&lt;a href="index.html">Home&lt;/a>&lt;/li>
+                        &lt;li class="active">Dashboard&lt;/li>
+                    &lt;/ol>
+                &lt;/div>
+            &lt;/div>
+            &lt;div id="main-wrapper">
+            &lt;/div>&lt;!-- Main Wrapper -->
+            &lt;div class="page-footer">
+                &lt;p class="no-s">Made with &lt;i class="fa fa-heart">&lt;/i> by stacks&lt;/p>
+            &lt;/div>
+        &lt;/div>&lt;!-- Page Inner -->
+    &lt;/main>&lt;!-- Page Content -->
+    &lt;nav class="cd-nav-container" id="cd-nav">
+        &lt;header>
+            &lt;h3>DEMOS&lt;/h3>
+        &lt;/header>
+        &lt;div class="col-md-6 demo-block demo-selected demo-active">
+            &lt;p>Dark&lt;br>Design&lt;/p>
+        &lt;/div>
+        &lt;div class="col-md-6 demo-block">
+            &lt;a href="../admin2/index.html">&lt;p>Light&lt;br>Design&lt;/p>&lt;/a>
+        &lt;/div>
+        &lt;div class="col-md-6 demo-block demo-coming-soon">
+            &lt;p>Horizontal&lt;br>(Coming)&lt;/p>
+        &lt;/div>
+        &lt;div class="col-md-6 demo-block demo-coming-soon">
+            &lt;p>Material&lt;br>(Coming)&lt;/p>
+        &lt;/div>
+        &lt;div class="col-md-6 demo-block demo-coming-soon">
+            &lt;p>Coming&lt;br>Soon&lt;/p>
+        &lt;/div>
+        &lt;div class="col-md-6 demo-block demo-coming-soon">
+            &lt;p>Coming&lt;br>Soon&lt;/p>
+        &lt;/div>
+    &lt;/nav>
+    &lt;div class="cd-overlay">&lt;/div>
+	
+
+    &lt;!-- Javascripts -->
+    &lt;script src="assets/plugins/jquery/jquery-3.1.0.min.js">&lt;/script>
+    &lt;script src="assets/plugins/jquery-ui/jquery-ui.min.js">&lt;/script>
+    &lt;script src="assets/plugins/pace-master/pace.min.js">&lt;/script>
+    &lt;script src="assets/plugins/jquery-blockui/jquery.blockui.js">&lt;/script>
+    &lt;script src="assets/plugins/bootstrap/js/bootstrap.min.js">&lt;/script>
+    &lt;script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js">&lt;/script>
+    &lt;script src="assets/plugins/switchery/switchery.min.js">&lt;/script>
+    &lt;script src="assets/plugins/uniform/js/jquery.uniform.standalone.js">&lt;/script>
+    &lt;script src="assets/plugins/offcanvasmenueffects/js/classie.js">&lt;/script>
+    &lt;script src="assets/plugins/waves/waves.min.js">&lt;/script>
+    &lt;script src="assets/plugins/3d-bold-navigation/js/main.js">&lt;/script>
+    &lt;script src="assets/plugins/waypoints/jquery.waypoints.min.js">&lt;/script>
+    &lt;script src="assets/plugins/toastr/toastr.min.js">&lt;/script>
+    &lt;script src="assets/plugins/flot/jquery.flot.min.js">&lt;/script>
+    &lt;script src="assets/plugins/flot/jquery.flot.time.min.js">&lt;/script>
+    &lt;script src="assets/plugins/flot/jquery.flot.symbol.min.js">&lt;/script>
+    &lt;script src="assets/plugins/flot/jquery.flot.resize.min.js">&lt;/script>
+    &lt;script src="assets/plugins/flot/jquery.flot.tooltip.min.js">&lt;/script>
+    &lt;script src="assets/plugins/curvedlines/curvedLines.js">&lt;/script>
+    &lt;script src="assets/plugins/chartjs/Chart.bundle.min.js">&lt;/script>
+    &lt;script src="assets/js/meteor.min.js">&lt;/script>
+    &lt;script src="assets/js/pages/dashboard.js">&lt;/script>
+        
+&lt;/body>
+</pre>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-white" id="custom">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">Customization</div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>All theme CSS files are located in <code>Source/../assets/css</code> folder. For your CSS customization you can use <code>Source/../assets/css/custom.css</code>. Keep your custom CSS separate it makes more easier when updating the theme in future.</p>
+                                            <p>All Javascript files are located in <code>Source/../assets/js/</code> folder. Also Page-level Javascript files are located in <code>source/assets/js/pages/</code> folder and each page has its own Javascript file. For your Javascripts you can use <code>Source/assets/js/custom.js</code>. Keep your custom Javascript separate it makes more easier when updating the theme in future.</p>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-white" id="fonts">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">Fonts</div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>This template uses Arial font.</p>
+                                            <p>Meteor also uses <b>Fontawesome</b>, <b>Glyphicons</b>, <b>Weather icons</b> and <b>Simple Line</b> Font Icon packs. Font Icons must be loaded in HTML <code>Head</code> before theme css files.</p>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-white" id="themes">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">Themes &amp; Layouts</div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>Meteor comes with 3 layouts, we call them "layers": <code>dark</code>, <code>light</code> and <code>material</code>. You can check them by clicking on button before full screen and after collapse menu buttons.</p>
+                                            <p>Once you've chosen one of the "layers", you must include the layer code in HTML <code>Head</code>. For example, if you'd like to have a light one, you must write the following code:</p>
+                                            <pre class="prettify">
+&lt;link href="assets/css/layers/light-layer.css" class="theme-color" rel="stylesheet" type="text/css"/>
+</pre>
+                                            <p>If you'd like to have a dark one, then don't touch anything. It's set by the default.</p>
+                                            <p>Meteor comes with many flexible and functional layout options. It lets you to create the most relevant layout for your application. In Meteor UI Framework layouts are selected by adding classes on the HTML <code>body</code> tag or/and exactly on that element which must be changed. You can choose layout options very easily by playing with them in themes &amp; layouts settings dropdown menu, which is located on left side of topmenu.</p>
+                                            <p>By default Meteor uses <b>Static Header Mode</b>. If you don't want to use Static Header Mode, then adding class <code>page-header-fixed</code> to body must help.</p>
+                                            <p>To use <b>Fixed Sidebar Mode</b> you must add <code>page-sidebar-fixed</code> class to HTML <code>body</code>. By default Meteor uses Static Sidebar Mode.</p>
+                                            <p>To use <b>Horizontal Bar Mode</b> you must add <code>page-horizontal-bar</code> class to HTML <code>body</code>,  add <code>horizontal-bar</code> class to <code>.sidebar</code> and remove <code>page-sidebar</code> class from it. By default Meteor doesn't use Horizontal Bar Mode.</p>
+                                            <p>If you want to use <b>Collapsed Sidebar Mode</b>, then you just have to add a <code>small-sidebar</code> class to HTML <code>body</code>. Also, there is a special button in the topmenu which toggles Collapsed Sidebar Mode. By default Meteor is not using Collapsed Sidebar Mode.</p>                     
+                                            <p>Meteor comes with <b>compact/compactALT menu modes</b>. To use compactALT menu, you must remove <code>compact-menu</code> class from HTML <code>body</code>. compact menu is set by default.</p>
+                                            <p>Meteor also includes <b>Accordion/Hover menu modes</b>. To use hover menu you must add <code>hover-menu</code> class to HTML <code>body</code>. Accordion mode is set by default.</p>
+
+                                            <p>Meteor also includes <b>Boxed Layout Mode</b>. To use it you must add <code>container</code> class to <code>.page-content</code>. By default Meteor doesn't use this layout option.</p>
+                                            
+                                            <div class="alert alert-danger">
+                                                Note! Some Layout options aren't compatible together. You can check it by changing layout options from themes &amp; layouts settings dropdown menu. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-white" id="colors">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">Colors</div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>Meteor comes with 8 color palettes for creating colorful widgets and elements.</p>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="color-pallete">
+                                                        <div class="color-item bg-primary light">
+                                                            <span>#837ab9</span>
+                                                        </div>
+                                                        <div class="color-item bg-primary">
+                                                            <span>#756BB0</span>
+                                                        </div>
+                                                        <div class="color-item bg-primary dark">
+                                                            <span>#695fa4</span>
+                                                        </div>
+                                                        <div class="color-item">
+                                                            <code>.bg-primary</code>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="color-pallete">
+                                                        <div class="color-item bg-success light">
+                                                            <span>#41BCA7</span>
+                                                        </div>
+                                                        <div class="color-item bg-success">
+                                                            <span>#30B19B</span>
+                                                        </div>
+                                                        <div class="color-item bg-success dark">
+                                                            <span>#28A38E</span>
+                                                        </div>
+                                                        <div class="color-item">
+                                                            <code>.bg-success</code>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="color-pallete">
+                                                        <div class="color-item bg-info light">
+                                                            <span>#25AfC7</span>
+                                                        </div>
+                                                        <div class="color-item bg-info">
+                                                            <span>#14A2BB</span>
+                                                        </div>
+                                                        <div class="color-item bg-info dark">
+                                                            <span>#0D92AA</span>
+                                                        </div>
+                                                        <div class="color-item">
+                                                            <code>.bg-info</code>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="color-pallete">
+                                                        <div class="color-item bg-warning light">
+                                                            <span>#EAC657</span>
+                                                        </div>
+                                                        <div class="color-item bg-warning">
+                                                            <span>#DFBA47</span>
+                                                        </div>
+                                                        <div class="color-item bg-warning dark">
+                                                            <span>#D2Ad3A</span>
+                                                        </div>
+                                                        <div class="color-item">
+                                                            <code>.bg-warning</code>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="color-pallete">
+                                                        <div class="color-item bg-danger light">
+                                                            <span>#F26A6A</span>
+                                                        </div>
+                                                        <div class="color-item bg-danger">
+                                                            <span>#DE4D4D</span>
+                                                        </div>
+                                                        <div class="color-item bg-danger dark">
+                                                            <span>#D54444</span>
+                                                        </div>
+                                                        <div class="color-item">
+                                                            <code>.bg-danger</code>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="color-pallete">
+                                                        <div class="color-item bg-dark light">
+                                                            <span>#3B3B3B</span>
+                                                        </div>
+                                                        <div class="color-item bg-dark">
+                                                            <span>#333333</span>
+                                                        </div>
+                                                        <div class="color-item bg-dark dark">
+                                                            <span>#2B2B2B</span>
+                                                        </div>
+                                                        <div class="color-item">
+                                                            <code>.bg-dark</code>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="color-pallete">
+                                                        <div class="color-item bg-gray light">
+                                                            <span>#D7D7D7</span>
+                                                        </div>
+                                                        <div class="color-item bg-gray">
+                                                            <span>#CCCCCC</span>
+                                                        </div>
+                                                        <div class="color-item bg-gray dark">
+                                                            <span>#B9B9B9</span>
+                                                        </div>
+                                                        <div class="color-item">
+                                                            <code>.bg-gray</code>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="color-pallete">
+                                                        <div class="color-item bg-light light">
+                                                            <span>#F9F9F9</span>
+                                                        </div>
+                                                        <div class="color-item bg-light">
+                                                            <span>#F1F1F1</span>
+                                                        </div>
+                                                        <div class="color-item bg-light dark">
+                                                            <span>#E5E5E5</span>
+                                                        </div>
+                                                        <div class="color-item">
+                                                            <code>.bg-light</code>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-white" id="utilities">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">Utilities</div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>All available Helper Classes in Meteor:</p>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>Prefix</th>
+                                                            <th>Second Prefix (side)</th>
+                                                            <th>third Prefix</th>
+                                                            <th>Suffix (value)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Margin</td>
+                                                            <td>m</td>
+                                                            <td>t,r,b,l</td>
+                                                            <td>n (only for negative values)</td>
+                                                            <td>xxs, xs, sm, md, lg, xxl</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Padding</td>
+                                                            <td>p</td>
+                                                            <td>v,h (top &amp; bottom, left &amp; right)</td>
+                                                            <td></td>
+                                                            <td>xxs, xs, sm, md, lg, xxl</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p><code>.no-s</code> Removes margins &amp; paddings</p>
+                                            <p><code>.no-m</code> Removes margins</p>
+                                            <p><code>.no-p</code> Removes paddings</p>
+                                            <p><code>.no-p-h</code> Removes paddings from left &amp; right</p>
+                                            <p><code>.no-p-v</code> Removes Paddings from top &amp; bottom</p>
+                                            <hr>
+                                            <p><code>.no-b</code> Removes borders</p>
+                                            <p><code>.b</code> Adds border from all sides</p>
+                                            <p><code>.b-t</code>, <code>.b-r</code>, <code>.b-b</code>, <code>.b-l</code> Adds border from top, right, bottom, left</p>
+                                            <p><code>.b-default</code>, <code>.b-primary</code>, <code>.b-success</code>, <code>.b-info</code>, <code>.b-warning</code>, <code>.b-danger</code> Adds border by contextual colors, see <a href="#colors">colors</a> doc.</p>
+                                            <p><code>.b-2</code>, <code>.b-3</code>, <code>.b-4</code> Border size</p>
+                                            <p><code>.b-n-t</code>, <code>.b-n-r</code>, <code>.b-n-b</code>, <code>.b-n-l</code> Removes border from  top, right, bottom, left</p>
+                                            <hr>
+                                            <p><code>.no-r</code> Removes border radius</p>
+                                            <p><code>.r</code> Adds border radius</p>
+                                            <p><code>.r-t-l</code>, <code>.r-t-r</code>, <code>.r-b-l</code>, <code>.r-b-r</code> Adds border radius From top-left, top-right, bottom-left, bottom-right sides.</p>
+                                            <p><code>.no-r-t-l</code>, <code>.no-r-t-r</code>, <code>.no-r-b-l</code>, <code>.no-r-b-r</code> Removes border radius From top-left, top-right, bottom-left, bottom-right sides.</p>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-white" id="credits">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">Sources &amp; Credits</div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>We've used following sources &amp; credits</p>
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Plugin</th>
+                                                            <th>Official Website</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>3D Bold Navigation</td>
+                                                            <td><a href="http://codyhouse.co/gem/3d-bold-navigation/">http://codyhouse.co/gem/3d-bold-navigation/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap</td>
+                                                            <td><a href="http://getbootstrap.com/">http://getbootstrap.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap Colorpicker</td>
+                                                            <td><a href="https://github.com/mjolnic/bootstrap-colorpicker">https://github.com/mjolnic/bootstrap-colorpicker</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap Datepicker</td>
+                                                            <td><a href="https://github.com/eternicode/bootstrap-datepicker">https://github.com/eternicode/bootstrap-datepicker</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap Datetimepicker</td>
+                                                            <td><a href="http://eonasdan.github.io/bootstrap-datetimepicker">http://eonasdan.github.io/bootstrap-datetimepicker/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Chartjs</td>
+                                                            <td><a href="http://www.chartjs.org/">http://www.chartjs.org/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Checkout Effects</td>
+                                                            <td><a href="http://tympanus.net/codrops/2015/01/22/ideas-checkout-effects/">http://tympanus.net/codrops/2015/01/22/ideas-checkout-effects/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Datatables</td>
+                                                            <td><a href="https://www.datatables.net/">https://www.datatables.net/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dropzone</td>
+                                                            <td><a href="http://www.dropzonejs.com/">http://www.dropzonejs.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Flot charts</td>
+                                                            <td><a href="http://www.flotcharts.org/">http://www.flotcharts.org/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FontAwesome</td>
+                                                            <td><a href="http://fontawesome.io/">http://fontawesome.io/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Fullcalendar</td>
+                                                            <td><a href="http://fullcalendar.io/">http://fullcalendar.io/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Google Grid Gallery</td>
+                                                            <td><a href="http://tympanus.net/codrops/2014/03/21/google-grid-gallery/">http://tympanus.net/codrops/2014/03/21/google-grid-gallery/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Image Cropper</td>
+                                                            <td><a href="http://fengyuanchen.github.io/cropper/">http://fengyuanchen.github.io/cropper/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery</td>
+                                                            <td><a href="https://jquery.com/">https://jquery.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Block UI</td>
+                                                            <td><a href="https://github.com/malsup/blockui">https://github.com/malsup/blockui</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Countdown</td>
+                                                            <td><a href="http://hilios.github.io/jQuery.countdown/">http://hilios.github.io/jQuery.countdown/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Slimscroll</td>
+                                                            <td><a href="http://rocha.la/jQuery-slimScroll/">http://rocha.la/jQuery-slimScroll/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery UI</td>
+                                                            <td><a href="https://jqueryui.com/">https://jqueryui.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery Validation</td>
+                                                            <td><a href="http://jqueryvalidation.org/">http://jqueryvalidation.org/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Vector Maps</td>
+                                                            <td><a href="http://jqvmap.com/">http://jqvmap.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>jsTree</td>
+                                                            <td><a href="http://www.jstree.com/">http://www.jstree.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Simple Line Icons</td>
+                                                            <td><a href="http://graphicburger.com/simple-line-icons-webfont/">http://graphicburger.com/simple-line-icons-webfont/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Morris Charts</td>
+                                                            <td><a href="http://morrisjs.github.io/morris.js/">http://morrisjs.github.io/morris.js/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Nestable</td>
+                                                            <td><a href="http://dbushell.github.io/Nestable/">http://dbushell.github.io/Nestable/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Off-Canvas menu effects</td>
+                                                            <td><a href="http://tympanus.net/Development/OffCanvasMenuEffects/cornerbox.html">http://tympanus.net/Development/OffCanvasMenuEffects/cornerbox.html</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Pace</td>
+                                                            <td><a href="http://github.hubspot.com/pace/docs/welcome/">http://github.hubspot.com/pace/docs/welcome/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Pricing Tables</td>
+                                                            <td><a href="http://codyhouse.co/gem/pricing-tables/">http://codyhouse.co/gem/pricing-tables/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Product Preview Slider</td>
+                                                            <td><a href="http://codyhouse.co/gem/product-preview-slider/">http://codyhouse.co/gem/product-preview-slider/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rickshaw</td>
+                                                            <td><a href="http://code.shutterstock.com/rickshaw/">http://code.shutterstock.com/rickshaw/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Select2</td>
+                                                            <td><a href="https://select2.github.io/">https://select2.github.io/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Summernote</td>
+                                                            <td><a href="http://summernote.org/">http://summernote.org/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Switchery</td>
+                                                            <td><a href="http://abpetkov.github.io/switchery/">http://abpetkov.github.io/switchery/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Toastr</td>
+                                                            <td><a href="https://github.com/CodeSeven/toastr/">https://github.com/CodeSeven/toastr/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Twitter Bootstrap Wizard</td>
+                                                            <td><a href="http://vadimg.com/twitter-bootstrap-wizard-example/">http://vadimg.com/twitter-bootstrap-wizard-example/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery Uniform</td>
+                                                            <td><a href="https://github.com/pixelmatrix/uniform/">https://github.com/pixelmatrix/uniform/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Timeline</td>
+                                                            <td><a href="http://codyhouse.co/gem/vertical-timeline/">http://codyhouse.co/gem/vertical-timeline/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Waves</td>
+                                                            <td><a href="http://fian.my.id/Waves/">http://fian.my.id/Waves/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Weather Icons</td>
+                                                            <td><a href="http://erikflowers.github.io/weather-icons/">http://erikflowers.github.io/weather-icons/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>X-editable</td>
+                                                            <td><a href="http://vitalets.github.io/x-editable/">http://vitalets.github.io/x-editable/</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <hr>
+                                            <p>Once again, thank you so much for purchasing this template. As we said at the beginning, we'd be glad to help you if you have any questions relating to this template. No guarantees, but we'll do our best to assist.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-footer bg-n">
+                                <p class="no-s">2016 &copy; Meteor by stacks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Javascripts -->
+        <script src="assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+        <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="assets/plugins/pace-master/pace.min.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/plugins/google-code-prettify/prettify.js"></script>
+        <script src="assets/js/docs.js"></script>
+        
+    </body>
+</html>
